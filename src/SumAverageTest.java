@@ -14,13 +14,13 @@ public class SumAverageTest {
    */
   @DataProvider(name = "Sum")
   public static Object[][] sum() {
-    return new Object[][]{
-        {1, 100, 5050},
-        {-100, 100, 0},
-        {1, 1, 1},
-            {0, 0, 0},
-            {5, 10, 45},
-    };
+      return new Object[][]{
+          {1, 100, 5050},
+          {-100, 100, 0},
+          {1, 1, 1},
+          {0, 0, 0},
+          {5, 10, 45},
+      };
   }
 
   /**
@@ -30,14 +30,14 @@ public class SumAverageTest {
    */
   @DataProvider(name = "Average")
   public static Object[][] average() {
-    return new Object[][]{
-        {1, 100, 50.5},
-        {-100, 100, 0.0},
-        {1, 1, 1.0},
-            {20, 30, 25.0},
-            {-20, 30, 5.0}
-    };
-  }
+      return new Object[][]{
+          {1, 100, 50.5},
+          {-100, 100, 0.0},
+          {1, 1, 1.0},
+          {20, 30, 25.0},
+          {-20, 30, 5.0}
+      };
+    }
 
   @Test(dataProvider = "Sum")
   public void testSumArray(int lowerBound, int upperBound, int expectedResult) {
